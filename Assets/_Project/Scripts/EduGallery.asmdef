@@ -1,0 +1,10 @@
+{
+    "name": "EduGallery",
+    "rootNamespace": "EduGallery",
+    "references": [
+        "Unity.InputSystem",
+        "Unity.XR.Interaction.Toolkit",
+        "UnityEngine.UI"
+    ],
+    "autoReferenced": true
+}
