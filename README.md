@@ -28,12 +28,12 @@ Team Arcadia (Team 2) · IG.3504 3D and Immersive Reality · ISEP 2026 · [Miro 
 
 ## Team
 
-| Member | Responsibility |
+| System | Member |
 |---|---|
-| Ange Nolwen Djuissi K. | TBD |
-| Naomie Marday | TBD |
-| Damiano Spadaccini | TBD |
-| Nicolò Romanelli | TBD |
-| Isaac Lee | TBD |
-| Sounika | TBD |
-| Minju Kim | TBD |
+| 1. Environment (room, lighting, door) | Minju Kim |
+| 2. Artworks & Data | Sounika |
+| 3. Puzzles | Naomie Marday (content) · Damiano Spadaccini (logic) |
+| 4. Player (desktop) | Isaac Lee |
+| 5. Game Logic | Ange Nolwen Djuissi K. |
+| 6. UI | TBD |
+| 7. Score & Audio | Damiano Spadaccini |
