@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace EduGallery
 {
@@ -16,6 +17,7 @@ namespace EduGallery
         public GameState State { get; private set; } = GameState.MainMenu;
         public int CurrentRoomIndex { get; private set; }
         public RoomManager CurrentRoom => rooms[CurrentRoomIndex];
+        public float ElapsedSeconds { get; private set; }
 
         private void Awake()
         {
@@ -33,8 +35,14 @@ namespace EduGallery
             SetState(GameState.MainMenu);
         }
 
+        private void Update()
+        {
+            if (State == GameState.Playing) ElapsedSeconds += Time.deltaTime;
+        }
+
         public void StartNewGame()
         {
+            ElapsedSeconds = 0f;
             SetState(GameState.Playing);
             EnterRoom(0, false);
         }
@@ -49,6 +57,8 @@ namespace EduGallery
             bool isFinalHall = next == rooms.Length - 1;
             if (isFinalHall) SetState(GameState.Finished);
         }
+
+        public void RestartGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         public void QuitGame()
         {
